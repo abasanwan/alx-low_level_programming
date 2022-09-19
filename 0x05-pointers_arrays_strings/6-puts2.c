@@ -3,19 +3,24 @@
 /**
  * puts2 - prints every other char
  * @str: a pointer given by the main function
+ *
  * Return: 0
  */
 
 void puts2(char *str)
 {
-	int counter = 0;
+	int i;
+	int j = 0;
 
-	while (str[counter] != '\0')
+	while (str[j] != '\0')
 	{
-	if (counter % 2 == 0)
-	
-	_putchar(str[counter]);
-	counter++;
+		j++;
 	}
-	       _putchar(10);
+
+	for (i = 0; i < j; i += 2)
+	{
+		_putchar(str[i]);
+	}
+
+	_putchar('\n');
 }
